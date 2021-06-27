@@ -45,7 +45,7 @@ p {
 .navbar-brand {
   font-size: 2.5rem;
   font-family: "Ubuntu";
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .nav-item {
@@ -80,4 +80,33 @@ p {
 }
 .card-img-top {
   margin: 5px 0px 5px 0px;
+}
+
+/* FORM  */
+div.form {
+  padding: 0 20% 0;
+}
+
+.btn > a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 100%;
+  }
+  #title {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-family: "Ubuntu";
+    font-weight: bolder;
+  }
 }
