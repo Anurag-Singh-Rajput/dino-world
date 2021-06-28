@@ -9,7 +9,7 @@ anime({
 
 
 anime({
-  targets: '.home-button',
+  targets: '.home-button, .book-link, .about-h3',
   scaleY: [
     { value: [1, 1], duration: 1200 },
     { value: 2, duration: 50, delay: 1000, easing: 'easeOutExpo' },
