@@ -14,11 +14,21 @@ body {
   padding: 2% 6% 8%;
 }
 
-h1 {
+.home-content {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   line-height: 1.5;
   font-size: 3.2rem;
+  color: #c24a31;
+}
+
+.container-fluid > nav > a.navbar-brand {
+  color: #d1833a;
+}
+.container-fluid > nav > a.navbar-brand:hover {
+  animation-name: zoom3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 h2 {
@@ -71,14 +81,22 @@ p {
 }
 .nav-link:hover:after {
   width: 100%;
-  background: #1b0f43;
+  background: #d1833a;
 }
 
+#navbarSupportedContent .navbar-nav .nav-link {
+  color: #1b0f43;
+  font-weight: 500;
+}
+#navbarSupportedContent .navbar-nav .book-link {
+  color: #d1833a;
+  font-weight: bold;
+}
 #navbarSupportedContent .navbar-nav .nav-link:hover {
-  color: black;
+  color: #d1833a;
 }
 #navbarSupportedContent .navbar-nav .nav-link:active {
-  color: black;
+  color: #d1833a;
 }
 
 /* Download Buttons */
@@ -116,13 +134,14 @@ p {
   box-sizing: border-box;
   height: auto;
   padding: 10px;
+  margin: 5% 0 5%;
   font-size: 16px;
 }
 
 .form-signin .form-control:focus {
   z-index: 2;
 }
-img {
+.img-book {
   border-radius: 50%;
   width: 50%;
 }
@@ -150,12 +169,11 @@ img {
   padding-bottom: 0;
 }
 .container-fluid > .form {
-  padding: 5% 20% 0;
+  padding: 5% 20% 7%;
   border-radius: 5%;
 }
 .info {
   display: flex;
-  /* text-align: center; */
   align-items: center;
   justify-content: center;
   background-color: #7057a5;
@@ -205,8 +223,17 @@ input:focus {
   width: 20%;
   padding-bottom: 3%;
 }
-
+.about-head {
+  color: #3f2f70;
+}
+.about-h3 {
+  color: #3f2f70;
+}
+.about-para {
+  color: #7057a5;
+}
 /* Events  */
+
 .event-fluid {
   padding-bottom: 0;
 }
@@ -215,11 +242,10 @@ input:focus {
   color: #1b0f43;
   text-align: center;
 }
-
-.event-image {
-  border-radius: 50%;
-  width: 10%;
-  margin: 20px;
+#events1 {
+  background-color: #e0d4e9;
+  color: #1b0f43;
+  text-align: center;
 }
 
 .event-text {
@@ -310,5 +336,94 @@ input:focus {
     font-size: 1.5rem;
     font-family: "Ubuntu";
     font-weight: bolder;
+  }
+
+  #events1 {
+    margin-bottom: 30%;
+  }
+  .event-fluid {
+    margin-bottom: 30%;
+  }
+}
+
+/* BUTTON */
+.btn {
+  border: 2px solid #1b0f43;
+  background-color: #7057a5;
+  color: white;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  margin: 18px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.home-button {
+  border: 2px solid #d1833a;
+  background-color: #d1833a;
+  color: white;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  margin: 18px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.home-button > a {
+  text-decoration: none;
+  color: white;
+}
+
+.home-button:hover {
+  animation-name: zoom2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.submit-btn {
+  text-decoration: none;
+  color: #1b0f43;
+}
+@keyframes zoom {
+  0% {
+    background-color: #7057a5;
+    color: black;
+  }
+  50% {
+    background-color: #3f2f70;
+    color: #555;
+  }
+  100% {
+    background-color: #1b0f43;
+    color: black;
+  }
+}
+@keyframes zoom2 {
+  0% {
+    background-color: #d1833a;
+    color: black;
+  }
+  50% {
+    background-color: #cc7137;
+    color: #555;
+  }
+  100% {
+    background-color: #c24a31;
+    color: black;
+  }
+}
+@keyframes zoom3 {
+  0% {
+    color: #d1833a;
+  }
+  50% {
+    color: #cc7137;
+  }
+  100% {
+    color: #c24a31;
   }
 }
