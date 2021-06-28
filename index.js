@@ -20,6 +20,19 @@ anime({
   easing: 'easeOutElastic(1, .8)',
   loop: true
 });
+anime({
+  targets: '.about-img',
+  scaleX: [
+    { value: [1, 1], duration: 1200 },
+    { value: 2, duration: 50, delay: 1000, easing: 'easeOutExpo' },
+    { value: 1, duration: 900 },
+    { value: 1.75, duration: 50, delay: 1000, easing: 'easeOutExpo' },
+    { value: 1, duration: 900 }
+  ],
+  easing: 'easeOutElastic(1, .8)',
+  loop: true
+});
+
 
 
 

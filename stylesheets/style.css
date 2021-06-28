@@ -127,10 +127,38 @@ p {
   padding-bottom: 3%;
 }
 
+/* Events  */
+.event-fluid {
+  padding-bottom: 0;
+}
+#events {
+  background-color: #e0d4e9;
+  color: #1b0f43;
+  text-align: center;
+}
+
+.event-image {
+  border-radius: 50%;
+  width: 10%;
+  margin: 20px;
+}
+
+.event-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.event-detail {
+  padding: 0 5% 0;
+}
+.event-head {
+  padding-top: 3%;
+}
+
 /* FOOTER  */
 
 #footer {
-  background-color: #e0d4e9;
+  background-color: #d7c1e7;
   text-align: center;
   padding-top: 1%;
 }
