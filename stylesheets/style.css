@@ -60,11 +60,25 @@ p {
   font-weight: 300;
 }
 
+.nav-link:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.nav-link:hover:after {
+  width: 100%;
+  background: #1b0f43;
+}
+
 #navbarSupportedContent .navbar-nav .nav-link:hover {
-  color: red;
+  color: black;
 }
 #navbarSupportedContent .navbar-nav .nav-link:active {
-  color: red;
+  color: black;
 }
 
 /* Download Buttons */
@@ -82,15 +96,53 @@ p {
 }
 .card-img-top {
   margin: 5px 0px 5px 0px;
+  border-radius: 50%;
 }
 
 /* FORM  */
-
-#booking {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
 }
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+img {
+  border-radius: 50%;
+  width: 50%;
+}
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.middle {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+
 .booking-fluid > .navbar {
   padding-bottom: 0;
 }
@@ -98,7 +150,34 @@ p {
   padding-bottom: 0;
 }
 .container-fluid > .form {
-  padding: 2% 0 0;
+  padding: 5% 20% 0;
+  border-radius: 5%;
+}
+.info {
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  background-color: #7057a5;
+  border-radius: 2% 0 0 2%;
+}
+.info > h3 {
+  color: white;
+  padding-left: 10%;
+}
+.info > p {
+  color: rgb(214, 206, 206);
+}
+.book-text {
+  margin: 1%;
+}
+
+input {
+  border-style: none;
+  outline: none;
+}
+input:focus {
+  border-bottom-style: solid;
 }
 
 .btn > a {
@@ -186,6 +265,12 @@ p {
 .fa-github:hover {
   color: #1b0f43;
 }
+
+/* GALLERY */
+#title > .container > .row > div {
+  border-radius: 50%;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 991px) {
