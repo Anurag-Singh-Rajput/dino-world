@@ -328,7 +328,8 @@ input:focus {
     width: 36%;
   }
 
-  h1 {
+  h1,
+  .home-content {
     font-weight: 500;
     font-size: 1.9rem;
   }
