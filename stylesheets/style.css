@@ -274,6 +274,7 @@ input:focus {
 
 .social-med {
   margin: 2% 1%;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -286,10 +287,21 @@ input:focus {
 .fa-github {
   color: #7057a5;
 }
-.fa-instagram:hover,
-.fa-envelope:hover,
+
+.fa-envelope:hover {
+  animation-name: mail;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.fa-instagram:hover {
+  animation-name: instagram;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
 .fa-github:hover {
-  color: #1b0f43;
+  animation-name: github;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 /* GALLERY */
@@ -389,6 +401,7 @@ input:focus {
   text-decoration: none;
   color: #1b0f43;
 }
+
 @keyframes zoom {
   0% {
     background-color: #7057a5;
@@ -426,5 +439,38 @@ input:focus {
   }
   100% {
     color: #c24a31;
+  }
+}
+@keyframes mail {
+  0% {
+    color: rgb(34, 33, 33);
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: blue;
+  }
+}
+@keyframes instagram {
+  0% {
+    color: rgb(34, 33, 33);
+  }
+  50% {
+    color: rgb(255, 145, 0);
+  }
+  100% {
+    color: rgb(255, 145, 0);
+  }
+}
+@keyframes github {
+  0% {
+    color: rgb(34, 33, 33);
+  }
+  50% {
+    color: purple;
+  }
+  100% {
+    color: purple;
   }
 }
