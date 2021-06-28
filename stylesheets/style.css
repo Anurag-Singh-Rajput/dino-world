@@ -11,7 +11,7 @@ body {
 }
 
 .container-fluid {
-  padding: 2% 6% 0%;
+  padding: 2% 6% 8%;
 }
 
 h1 {
@@ -86,10 +86,19 @@ p {
 
 /* FORM  */
 
-#work {
+#booking {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.booking-fluid > .navbar {
+  padding-bottom: 0;
+}
+.booking-fluid {
+  padding-bottom: 0;
+}
+.container-fluid > .form {
+  padding: 2% 0 0;
 }
 
 .btn > a {
@@ -118,6 +127,37 @@ p {
   padding-bottom: 3%;
 }
 
+/* FOOTER  */
+
+#footer {
+  background-color: #e0d4e9;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.foot {
+  padding: 1% 0;
+}
+
+.social-med {
+  margin: 2% 1%;
+  cursor: pointer;
+}
+
+.footer-text {
+  color: #1b0f43;
+}
+
+.fa-instagram,
+.fa-envelope,
+.fa-github {
+  color: #7057a5;
+}
+.fa-instagram:hover,
+.fa-envelope:hover,
+.fa-github:hover {
+  color: #1b0f43;
+}
 /* MEDIA QUERIES */
 
 @media (max-width: 991px) {
@@ -138,7 +178,11 @@ p {
   .about-image {
     position: static;
     transform: rotate(0);
-    width: 70%;
+    width: 100%;
+  }
+  .about-img {
+    width: 40%;
+    padding-bottom: 3%;
   }
   .download-button {
     font-size: 0.7rem;
